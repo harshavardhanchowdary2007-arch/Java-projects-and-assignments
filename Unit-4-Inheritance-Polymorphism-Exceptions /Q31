@@ -1,0 +1,19 @@
+class A {
+    void displayA() {
+        System.out.println("Class A");
+    }
+}
+
+class B extends A {
+    void displayB() {
+        System.out.println("Class B");
+    }
+}
+
+public class Q31 extends B {
+    public static void main(String[] args) {
+        Q31 obj = new Q31();
+        obj.displayA();
+        obj.displayB();
+    }
+}
