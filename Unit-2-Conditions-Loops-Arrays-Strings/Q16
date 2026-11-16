@@ -1,0 +1,20 @@
+
+public class Q16 {
+    public static void main(String[] args) {
+
+        String str = "Java Programming";
+
+        System.out.println("Length: " + str.length());
+        System.out.println("Uppercase: " + str.toUpperCase());
+        System.out.println("Lowercase: " + str.toLowerCase());
+        System.out.println("Character: " + str.charAt(0));
+
+        StringBuffer sb = new StringBuffer("Hello");
+
+        sb.append(" Java");
+        System.out.println("Append: " + sb);
+
+        sb.reverse();
+        System.out.println("Reverse: " + sb);
+    }
+}
