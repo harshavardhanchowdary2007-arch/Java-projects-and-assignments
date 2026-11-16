@@ -1,0 +1,31 @@
+
+class Student {
+
+    int id;
+    static String college = "ITM University";
+
+    Student(int id) {
+        this.id = id;
+    }
+
+    static void displayCollege() {
+        System.out.println("College: " + college);
+    }
+
+    void display() {
+        System.out.println("Student ID: " + id);
+    }
+}
+
+public class Q25 {
+    public static void main(String[] args) {
+
+        Student s1 = new Student(101);
+        Student s2 = new Student(102);
+
+        s1.display();
+        s2.display();
+
+        Student.displayCollege();
+    }
+}
