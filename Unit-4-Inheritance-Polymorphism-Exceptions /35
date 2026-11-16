@@ -1,0 +1,14 @@
+interface Vehicle {
+    void start();
+}
+
+public class Q35 implements Vehicle {
+    public void start() {
+        System.out.println("Vehicle started");
+    }
+
+    public static void main(String[] args) {
+        Q35 obj = new Q35();
+        obj.start();
+    }
+}
