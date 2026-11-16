@@ -1,0 +1,14 @@
+abstract class Shape {
+    abstract void area();
+}
+
+public class Q34 extends Shape {
+    void area() {
+        System.out.println("Area of rectangle = 50");
+    }
+
+    public static void main(String[] args) {
+        Q34 obj = new Q34();
+        obj.area();
+    }
+}
