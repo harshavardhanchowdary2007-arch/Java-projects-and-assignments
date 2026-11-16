@@ -1,0 +1,16 @@
+class Parent {
+    void show() {
+        System.out.println("Parent class");
+    }
+}
+
+public class Q32 extends Parent {
+    void show() {
+        System.out.println("Child class");
+    }
+
+    public static void main(String[] args) {
+        Q32 obj = new Q32();
+        obj.show();
+    }
+}
