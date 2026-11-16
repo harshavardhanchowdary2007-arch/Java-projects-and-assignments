@@ -1,0 +1,19 @@
+class Parent {
+    final int number = 100;
+
+    void display() {
+        System.out.println("Parent class");
+    }
+}
+
+public class Q36 extends Parent {
+    void show() {
+        super.display();
+        System.out.println("Number = " + super.number);
+    }
+
+    public static void main(String[] args) {
+        Q36 obj = new Q36();
+        obj.show();
+    }
+}
