@@ -1,0 +1,26 @@
+import java.io.*;
+
+class Student implements Serializable {
+    int id = 101;
+    String name = "Rahul";
+}
+
+public class Q46 {
+    public static void main(String[] args) {
+        try {
+            Student s = new Student();
+
+            ObjectOutputStream out =
+                new ObjectOutputStream(
+                    new FileOutputStream("student.dat"));
+
+            out.writeObject(s);
+            out.close();
+
+            System.out.println("Object serialized successfully");
+        }
+        catch (Exception e) {
+            System.out.println(e);
+        }
+    }
+}
