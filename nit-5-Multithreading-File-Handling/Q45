@@ -1,0 +1,22 @@
+import java.io.*;
+
+public class Q45 {
+    public static void main(String[] args) {
+        try {
+            BufferedWriter w =
+                new BufferedWriter(new FileWriter("data.txt"));
+
+            w.write("Java File Handling");
+            w.close();
+
+            BufferedReader r =
+                new BufferedReader(new FileReader("data.txt"));
+
+            System.out.println(r.readLine());
+            r.close();
+        }
+        catch (Exception e) {
+            System.out.println(e);
+        }
+    }
+}
