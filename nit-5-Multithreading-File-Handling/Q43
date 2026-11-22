@@ -1,0 +1,10 @@
+import java.io.File;
+
+public class Q43 {
+    public static void main(String[] args) {
+        File f = new File("sample.txt");
+
+        System.out.println("File name: " + f.getName());
+        System.out.println("File exists: " + f.exists());
+    }
+}
